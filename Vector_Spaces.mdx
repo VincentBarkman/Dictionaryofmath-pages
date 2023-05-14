@@ -1,0 +1,51 @@
+# Vector Spaces
+
+A vector space (also known as a linear space) is a set of objects called vectors, which can be added together and multiplied ("scaled") by numbers, called scalars in this context. 
+
+## Properties
+
+Vector spaces are subject to ten properties, involving two operations: vector addition and scalar multiplication. Given vectors **u**, **v**, and **w** in vector space V, and scalars a and b:
+
+1. **Closure under addition**: If **u** and **v** are vectors in V, then the sum **u** + **v** is also in V.
+
+2. **Closure under scalar multiplication**: If **v** is a vector in V and a is a scalar, then the product a**v** is also in V.
+
+3. **Commutative property of addition**: **u** + **v** = **v** + **u**.
+
+4. **Associative property of addition**: (**u** + **v**) + **w** = **u** + (**v** + **w**).
+
+5. **Additive identity property**: There is a vector 0 in V such that **v** + 0 = **v** for all **v** in V.
+
+6. **Additive inverse property**: For every vector **v** in V, there exists a vector -**v** in V such that **v** + (-**v**) = 0.
+
+7. **Scalar multiplication identity property**: 1**v** = **v** for all **v** in V.
+
+8. **Distributive property of scalar sums**: (a + b)**v** = a**v** + b**v**.
+
+9. **Distributive property of vector sums**: a(**u** + **v**) = a**u** + a**v**.
+
+10. **Associative property of scalar multiplication**: (ab)**v** = a(b**v**).
+
+## Subspaces
+
+A subspace of a vector space is a set H of vectors from V that has three properties:
+
+1. The zero vector of V is in H.
+2. H is closed under vector addition (that is, for each u and v in H, the sum u + v is in H).
+3. H is closed under multiplication by scalars (that is, for each u in H and each scalar c, the vector cu is in H).
+
+## Linear Combinations and Span
+
+A linear combination of a set of vectors is an expression constructed from the vectors using addition and scalar multiplication. The set of all possible linear combinations of a set of vectors v1, v2, ..., vn is called the span of the vectors, and is denoted span{v1, v2, ..., vn}.
+
+## Linear Independence and Dependence
+
+A set of vectors is said to be linearly independent if no vector in the set can be defined as a linear combination of the others. If one vector in the set can be defined as a linear combination of the others, the vectors are said to be linearly dependent.
+
+## Basis and Dimension
+
+A basis of a vector space is a set of vectors that is linearly independent and that spans the vector space. The number of vectors in a basis is the dimension of the vector space.
+
+## Applications
+
+Vector spaces are used in a wide variety of fields, including physics, engineering, computer science, and economics. They can be used to model physical phenomena such as forces, velocities, and positions, as well as abstract concepts such as states in quantum mechanics, signals in signal processing, and solutions to linear differential equations.
