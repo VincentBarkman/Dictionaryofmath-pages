@@ -1,0 +1,30 @@
+# Fourier Series and Transforms
+
+Fourier series and Fourier transforms are mathematical techniques that are used in solving problems in areas such as signal processing, physics, and engineering. They are based on representing a function as a sum of sine and cosine functions (Fourier series) or integrating such products over all frequencies (Fourier transform).
+
+## Fourier Series
+
+A Fourier series is a way to represent a periodic function as an infinite sum of sine and cosine functions. For a function `f(x)` that is integrable on the interval `[-π, π]`, the Fourier series is given by:
+```python
+f(x) = a_0/2 + Σ (a_n cos(nx) + b_n sin(nx))
+```
+where `n` runs from 1 to infinity, and the coefficients `a_n` and `b_n` are defined by:
+```python
+a_n = (1/π) ∫_(-π)^π f(x) cos(nx) dx
+```
+```python
+b_n = (1/π) ∫_(-π)^π f(x) sin(nx) dx
+```
+## Fourier Transform
+
+The Fourier transform is a mathematical operation that transforms a function of time, `f(t)`, into a function of frequency, `F(ω)`. If `f(t)` is the signal in the time domain, `F(ω)` is that same signal in the frequency domain. It's defined by:
+```python
+F(ω) = ∫_(-∞)^∞ f(t) e^(-iωt) dt
+```
+The inverse Fourier transform, which takes a function in the frequency domain back to the time domain, is given by:
+```python
+f(t) = (1 / 2π) ∫_(-∞)^∞ F(ω) e^(iωt) dω
+```
+## Applications
+
+Fourier series and transforms have a wide range of applications in physics and engineering. They are used in signal processing for tasks such as image analysis, image filtering, image reconstruction, and audio signal processing. In physics, they are used to solve differential equations, to analyze wave patterns, and in quantum mechanics. 

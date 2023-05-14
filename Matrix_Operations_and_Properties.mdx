@@ -1,0 +1,51 @@
+# Matrix Operations and Properties
+
+Matrices, which are rectangular arrays of numbers, can be combined and manipulated in several ways. The primary operations on matrices are addition, subtraction, multiplication, and scalar multiplication. Each of these operations has certain properties.
+
+## Matrix Addition and Subtraction
+
+Matrix addition and subtraction are performed element by element. The matrices must have the same dimensions (i.e., the same number of rows and columns) to be added or subtracted.
+
+```python
+If A = [a_ij] and B = [b_ij] are m x n matrices, then their sum, A + B, is the m x n matrix C = [c_ij] where c_ij = a_ij + b_ij.
+```
+
+### Properties of Matrix Addition
+
+1. **Closure**: The sum of two matrices is a matrix.
+2. **Associative Property**: For all matrices `A, B, and C, (A + B) + C = A + (B + C)`.
+3. **Commutative Property**: For all matrices `A and B, A + B = B + A`.
+4. **Existence of an Identity Element**: For every matrix `A`, there exists a matrix `O` (the zero matrix of the same size as A) such that `A + O = A`.
+5. **Existence of Inverse Elements**: For every matrix `A`, there exists a matrix `-A` such that `A + (-A) = O`.
+
+## Scalar Multiplication
+
+In scalar multiplication, each entry of the matrix is multiplied by a given scalar.
+
+```python
+If A = [a_ij] is a matrix and k is a scalar, then the scalar product, kA, is the matrix B = [b_ij] where b_ij = k * a_ij.
+```
+
+## Matrix Multiplication
+
+Matrix multiplication is a bit more complex. The number of columns in the first matrix must be equal to the number of rows in the second matrix.
+
+```python
+If A is an m x n matrix and B is an n x p matrix, then their product, AB, is an m x p matrix.
+```
+
+### Properties of Matrix Multiplication
+
+1. **Closure**: The product of two matrices is a matrix.
+2. **Associative Property**: For all matrices `A, B, and C, (AB)C = A(BC)`.
+3. **Distributive Properties**: For all matrices `A, B, and C, A(B + C) = AB + AC and (B + C)A = BA + CA`.
+4. **Identity Property**: For every matrix `A`, there exists an identity matrix I such that `IA = AI = A`.
+5. **Matrix multiplication is not commutative**: In general, for matrices `A and B, AB ≠ BA`.
+
+## Transpose of a Matrix
+
+The transpose of a matrix `A`, denoted by `A`, is obtained by interchanging the rows and columns of `A`.
+
+## Inverse of a Matrix
+
+If `A` is a square matrix, an inverse `A^-1` may exist such that `AA^-1 = A^-1A = I`, where `I` is the identity matrix. Not all matrices have inverses.

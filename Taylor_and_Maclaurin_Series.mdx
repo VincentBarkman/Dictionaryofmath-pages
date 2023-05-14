@@ -1,0 +1,29 @@
+# Taylor and Maclaurin Series
+
+## Taylor Series
+
+A Taylor series is a type of power series that is used to represent a function as an infinite sum of terms. These terms are calculated from the values of the function's derivatives at a single point. The Taylor series of a function `f(x)` centered at a number `a` is given by:
+```python
+f(a) + f'(a)(x - a) + f''(a)(x - a)^2/2! + f'''(a)(x - a)^3/3! + ...
+```
+The `n`th term of this series can be written as:
+```python
+(f^n(a)(x - a)^n)/n!
+```
+where `f^n(a)` denotes the `n`th derivative of `f` evaluated at `a`.
+
+## Maclaurin Series
+
+A Maclaurin series is a special case of a Taylor series where the series is centered at `0` (i.e., `a = 0`). The Maclaurin series of a function `f(x)` is therefore given by:
+```python
+f(0) + f'(0)x + f''(0)x^2/2! + f'''(0)x^3/3! + ...
+```
+or in terms of the `n`th term:
+```python
+(f^n(0)x^n)/n!
+```
+## Uses of Taylor and Maclaurin Series
+
+Taylor and Maclaurin series are used extensively in various branches of mathematics, including calculus and numerical analysis. They are especially useful when it is difficult or impossible to work with the original function, but its derivatives are known and easy to compute.
+
+These series can be used to approximate functions, solve differential equations, and compute limits. They also provide a foundation for many of the key concepts and techniques in mathematical analysis, including the study of series convergence and the definition of transcendental functions like `e^x`, `sin(x)`, and `cos(x)`.

@@ -1,0 +1,32 @@
+# Derivatives
+
+A derivative is a fundamental concept in calculus that describes the rate at which a quantity changes. It is a measure of how a function changes as its input changes.
+
+## Definition
+
+The derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.
+
+If `f(x)` is a function, the derivative of `f` at a specific point `x` is defined as:
+```python
+f'(x) = lim(h→0) [f(x + h) - f(x)] / h
+```
+If this limit exists, `f` is said to be differentiable at `x`.
+
+## Interpretation
+
+The derivative of a function at a particular point is the slope of the line tangent to the function at that point. This means that the derivative measures the instantaneous rate of change of the function at a particular point.
+
+For example, in physics, the velocity of an object at a particular time is the derivative of the object's position function at that time. This is because velocity is the rate of change of position.
+
+## Rules of Differentiation
+
+There are several key rules of differentiation, including:
+
+- The Power Rule: If `f(x) = x^n`, then `f'(x) = n * x^(n-1)`
+- The Product Rule: If `f(x) = g(x) * h(x)`, then `f'(x) = g'(x) * h(x) + g(x) * h'(x)`
+- The Quotient Rule: If `f(x) = g(x) / h(x)`, then `f'(x) = [g'(x) * h(x) - g(x) * h'(x)] / [h(x)]²`
+- The Chain Rule: If `f(x) = g(h(x))`, then `f'(x) = g'(h(x)) * h'(x)`
+
+## Applications
+
+Derivatives are used in a wide variety of fields, including physics, engineering, economics, statistics, and computer science. They are used to model rates of change and motion, to calculate rates of profit and loss, to compute gradients for optimization algorithms, and much more.

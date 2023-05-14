@@ -1,0 +1,33 @@
+# Second-Order Differential Equations
+
+A second-order differential equation is a differential equation that involves the unknown function and its first and second derivatives. 
+
+## General Form
+
+The general form of a second-order differential equation is:
+```python
+d²y/dx² = f(x, dy/dx, y)
+```
+where:
+- `d²y/dx²` is the second derivative of y with respect to x,
+- `f(x, dy/dx, y)` is a function of x, y, and `dy/dx`.
+
+A particularly important case is the second-order linear differential equation, which has the form:
+```python
+a(x)d²y/dx² + b(x)dy/dx + c(x)y = g(x)
+```
+where `a(x)`, `b(x)`, `c(x)`, and `g(x)` are given functions of `x`, and `a(x)` is not zero.
+
+## Solving Second-Order Differential Equations
+
+Methods for solving second-order differential equations depend on the form of the equation. Here are some common types:
+
+1. **Homogeneous Linear Equations:** These are equations of the form `a(x)d²y/dx² + b(x)dy/dx + c(x)y = 0`. If `a(x)`, `b(x)`, and `c(x)` are constants, solutions can often be found in the form `y = e^(rx)`, where `r` is a constant.
+
+2. **Nonhomogeneous Linear Equations:** These are equations of the form `a(x)d²y/dx² + b(x)dy/dx + c(x)y = g(x)`. They are typically solved using a method known as undetermined coefficients or variation of parameters.
+
+3. **Euler Equations (Cauchy-Euler Equations):** These are equations of the form `a(x^2)y'' + b(x)y' + cy = 0`. They are solved by assuming a solution of the form `y = x^r`.
+
+## Applications
+
+Second-order differential equations appear in many fields of science and engineering, whenever a deterministic process is described. They are used to describe various phenomena in physics, such as the motion of simple harmonic oscillators, the behavior of electric circuits, and the solution of the Schrödinger equation in quantum mechanics.

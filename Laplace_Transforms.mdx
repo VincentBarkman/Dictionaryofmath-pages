@@ -1,0 +1,31 @@
+# Laplace Transforms
+
+The Laplace transform is an integral transform used in solving linear differential equations with constant coefficients. It converts a function of a real variable `t` (often time) to a function of a complex variable `s` (complex frequency).
+
+## Definition
+
+The Laplace transform of a function `f(t)`, defined for all real numbers `t ≥ 0`, is the function `F(s)`, defined by:
+```python
+F(s) = L{f(t)} = ∫_0^∞ e^(-st)f(t) dt
+```
+where:
+- `s` is a complex number frequency parameter,
+- `e` is the base of the natural logarithm,
+- `f(t)` is the original function,
+- `F(s)` is the Laplace transform of `f(t)`.
+
+## Inverse Laplace Transform
+
+The inverse Laplace transform is defined as:
+```python
+f(t) = L^-1{F(s)} = (1 / 2πi) ∫_c-i∞^c+i∞ e^(st)F(s) ds
+```
+where `c` is a real number that is greater than the real part of all singularities of `F(s)`.
+
+## Solving Differential Equations
+
+The Laplace transform is often used in solving linear ordinary differential equations. It transforms the problem into an algebraic problem, which is often easier to solve. After solving, the inverse Laplace transform is applied to return to the solution to the original differential equation.
+
+## Applications
+
+Laplace transforms are used extensively in engineering and physics, particularly in control theory and digital signal processing. They're also used in probability theory to solve stochastic differential equations.

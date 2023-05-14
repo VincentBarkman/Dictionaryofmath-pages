@@ -1,0 +1,25 @@
+# Boundary Value Problems
+
+A boundary value problem is a differential equation together with a set of additional constraints, called the boundary conditions. A solution to a boundary value problem is a solution to the differential equation which also satisfies the boundary conditions.
+
+## General Form
+
+Boundary value problems are typically expressed with differential equations, often involving derivatives of the function. For example, a common form of a second-order boundary value problem is:
+```python
+y'' = f(x, y, y')
+```
+with the boundary conditions `y(a) = y_a` and `y(b) = y_b`.
+
+In this example, `y''` represents the second derivative of the function `y` with respect to `x`, `f(x, y, y')` is some given function, and `y(a)` and `y(b)` are the specified function values at the points `x = a` and `x = b`.
+
+## Solving Boundary Value Problems
+
+Boundary value problems can be challenging to solve, as they often do not have a unique solution, or may not have a solution at all. When a unique solution does exist, it can often be found using techniques such as the shooting method or the finite difference method.
+
+1. **Shooting Method:** This involves turning the boundary value problem into an initial value problem, then adjusting the initial conditions to find a solution that satisfies the boundary conditions.
+
+2. **Finite Difference Method:** This involves approximating the derivatives in the differential equation using differences at discrete points, which turns the differential equation into a system of algebraic equations.
+
+## Applications
+
+Boundary value problems arise in many areas of physics and engineering. For example, they are used to model heat distribution over a rod (heat equation), the motion of a vibrating string (wave equation), and the behavior of electric and magnetic fields (Maxwell's equations).

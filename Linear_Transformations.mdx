@@ -1,0 +1,38 @@
+# Linear Transformations
+
+A linear transformation is a function between two vector spaces that preserves the operations of vector addition and scalar multiplication. In simpler terms, it's a way of 'mapping' one vector space onto another while maintaining the original structure of the vector space.
+
+Given two vector spaces V and W over the same field F, a function `T : V → W` is a linear transformation if for every two vectors `u, v ∈ V` and every scalar `c ∈ F`, the following two conditions are satisfied:
+
+1. `T(u + v) = T(u) + T(v)` (Preservation of vector addition)
+2. `T(cu) = cT(u)` (Preservation of scalar multiplication)
+
+## Properties of Linear Transformations
+
+Linear transformations have several important properties:
+
+1. **Zero vector is mapped to zero vector**: `T(0) = 0`. The zero vector in V is mapped to the zero vector in W.
+
+2. **Additive Inverse Property**: `T(-v) = -T(v)` for any vector `v` in `V`.
+
+3. **Distributive Property over Scalar Addition**: `T(u+v) = T(u) + T(v)` for any vectors `u, v in V`.
+
+4. **Distributive Property over Vector Addition**: `T(u+v) = T(u) + T(v)` for any vectors `u, v in V`.
+
+## Matrix Representation of Linear Transformations
+
+Every linear transformation can be represented by a matrix. If `T : R^n → R^m` is a linear transformation, then there exists a unique `m × n` matrix A such that `T(x) = Ax` for all `x ∈ R^n`. The columns of A are the images under T of the standard basis vectors of `R^n`.
+
+## Kernel and Range of a Linear Transformation
+
+The kernel (or null space) of a linear transformation T is the set of all vectors in `V` that `T` maps to the zero vector in W. It is denoted as `Ker(T) or N(T)`.
+
+The range (or image) of T is the set of all vectors in `W` that `T` maps to from `V`. It is denoted as `Ran(T) or Im(T)`.
+
+## Invertible Linear Transformations
+
+A linear transformation T is invertible if there exists another linear transformation S such that ST and TS are both identity transformations. In this case, `S` is called the inverse of `T`, denoted `T^(-1)`.
+
+## Applications
+
+Linear transformations are fundamental in many areas of mathematics, including geometry (where they correspond to geometric transformations), differential equations (where they correspond to linear differential operators), and functional analysis. They also have numerous applications in physics, engineering, computer graphics, and data science.

@@ -1,0 +1,52 @@
+# Eigenvalues and Eigenvectors
+
+Eigenvalues and eigenvectors are fundamental concepts in linear algebra with numerous applications in various fields, such as physics, computer science, engineering, and data analysis. 
+
+## Definitions
+
+Given a square matrix `A`, a non-zero vector **v** is an eigenvector of A if it satisfies the following equation:
+```python
+A**v** = λ**v**
+```
+
+In this equation, λ is a scalar known as the eigenvalue corresponding to the eigenvector **v**. 
+
+In simpler terms, if a matrix `A` is multiplied by a vector **v** and the result is a scaled version of the same vector **v**, then **v** is an eigenvector of the matrix A, and the scaling factor is the eigenvalue.
+
+## Calculation
+
+The eigenvalues of a matrix A are found by solving the characteristic equation:
+```python
+det(A - λI) = 0
+```
+where:
+- A is the matrix,
+- λ represents the eigenvalues,
+- I is the identity matrix of the same size as A,
+- det denotes the determinant of a matrix.
+
+Once the eigenvalues are found, each corresponding eigenvector can be found by solving the system of linear equations:
+```python
+(A - λI)**v** = 0
+```
+## Eigenspaces
+
+The set of all eigenvectors that correspond to a given eigenvalue, along with the zero vector, forms a subspace known as an eigenspace.
+
+## Diagonalization
+
+If a matrix A has a full set of eigenvectors, it can be factorized in the following way:
+```python
+A = PDP^(-1)
+```
+where:
+- D is a diagonal matrix whose entries are the eigenvalues of A,
+- P is a matrix whose columns are the eigenvectors of A,
+- P^(-1) is the inverse of P.
+
+This process is known as diagonalization and it's particularly useful because it simplifies many operations on the matrix `A`.
+
+## Applications
+
+Eigenvalues and eigenvectors have numerous applications. They're used in physics for understanding physical phenomena such as the behaviour of atoms in quantum mechanics, in computer graphics to help rotate and scale objects, and in data analysis for methods such as Principal Component Analysis (PCA) which is used to reduce the dimensionality of data.
+

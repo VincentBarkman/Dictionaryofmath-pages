@@ -1,0 +1,30 @@
+# Systems of Differential Equations
+
+A system of differential equations is a set of two or more differential equations involving the same variables. 
+
+## General Form
+
+The general form of a system of n first-order differential equations is:
+
+```python
+dx₁/dt = f₁(t, x₁, x₂, ..., xₙ)
+dx₂/dt = f₂(t, x₁, x₂, ..., xₙ)
+...
+dxₙ/dt = fₙ(t, x₁, x₂, ..., xₙ)
+```
+
+where `f₁`, `f₂`, ..., `fₙ` are given functions.
+
+## Solving Systems of Differential Equations
+
+The methods for solving a system of differential equations depend on the specifics of the system. Here are a few general methods:
+
+1. **Elimination:** If one equation can be algebraically manipulated to isolate one variable, substitution can be used to eliminate that variable from the other equation(s), resulting in a system with one fewer equation and one fewer variable. This process can be repeated until a single differential equation in one variable is obtained, which can then be solved by standard methods.
+
+2. **Matrix Methods:** For a system of linear differential equations, it can be rewritten in matrix form as `X' = AX` where `X` is the vector of variables and `A` is the matrix of coefficients. If the matrix `A` can be diagonalized, the system can be solved by decoupling the equations.
+
+3. **Numerical Methods:** For complex systems, or systems that cannot be solved analytically, numerical methods such as Euler's method, the Runge-Kutta method, or software-based solvers can be used to approximate the solution.
+
+## Applications
+
+Systems of differential equations arise in many fields whenever multiple quantities change simultaneously and affect each other. This includes areas such as physics (e.g., modeling interacting particles or predator-prey relations in population dynamics), engineering (e.g., analyzing interconnected circuits), and economics (e.g., modeling multiple interacting markets).
